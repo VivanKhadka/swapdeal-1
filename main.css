@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;  
+}
+body{
+    background-color: #dedfe3;
+}
+/**main box**/
+.navbar{
+    height: 60px;
+    background-color: #0f1111; 
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-evenly;
+}
+/**box 2**/
+.nav-logo{
+height:50px;
+width: 114px;
+margin: 1px;
+}
+
+.logo {
+background-image: url("picture/swaplogo4.png"); 
+align-items: end;
+width: 100%;
+background-size: cover;
+height: 50px;
+
+margin: 1px;
+align-items: center;
+}  
+.border{
+    border:2px solid transparent;
+}
+.add-first{
+    font-size: 0.85rem ;
+    color: #cccccc;
+    margin-left: 15px;
+}
+.add-sec{
+    font-size: 1rem ;
+    color: #ffffff;  
+    margin-left: 3px; 
+    font-weight: 700;
+    
+}
+.add-icon{
+display: flex;
+align-items: center;
+}
+/*box4**/
+.home-first{
+    font-size: 1rem;
+    color: #ffffff;
+    margin-left: 3px;
+    font-weight: 700;
+}
+/**box 4**/
+.nav-search{
+    display: flex ;
+    background-color:white ;
+    /* width: 620px; */
+    height: 40px;
+    border-radius: 5px;
+    justify-content: space-evenly;
+
+}
+.search-input:focus{
+    outline: none;
+}
+
+.search-select{
+    background-color:#9fa0a1;
+    width: 45px;
+    text-align:center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+}
+.search-input{
+    width: 520px;
+    font-size: 1rem;
+     border: none;
+
+}
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #176ffc;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: black;
+    opacity: 0.7;
+}
+/**box 5**/
+  span{
+    font-size: 0.7rem;
+  }
+  .nav-sec{
+font-size: 0.85rem;
+font-weight: 700;
+  }
+  .nav-search:focus{
+border:2px solid #176ffc;
+  }
+  .search-icon:hover{
+    opacity: 1;
+  }
+/**box6**/
+.nav-cart i{
+font-size: 30px;
+}
+.cart{
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+.nav-cart{
+    display: flex;
+    align-items: center;
+}
+/**SWAP DEAL**/
+.swap-deal{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* justify-content:center; */
+    padding: 20px;
+    height: auto;
+    display: flex;
+    gap: 20px;
+}
+/**products**/
+.image{
+    width: 520px;
+    height: 330px;
+    object-fit: cover;
+}
+.card{
+    background-color: white;
+    border-radius: 10px;
+    width: 23.7%;
+    min-height: 250px;
+}
+.image-container{
+    padding: 15px;
+    height: 200px;
+    border-radius: 10px;
+}
+.card-image{
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+    object-fit: contain;
+}
+.card-title{
+    font-size: 14px;
+    color: gray;
+    text-transform: capitalize;
+    margin: 0px;
+    padding: 0px;
+}
+.card-link{
+    color: #3d1c1c;
+    text-transform: capitalize;
+    font-size: 22px;
+    margin-bottom: 7px;
+    margin-top: 7px;
+    text-decoration: none;
+}
+.card-body{
+    padding: 10px;
+    border-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.card-footer{
+    /* background-color: green; */
+    display: flex;
+    justify-content: space-between;
+}
+.nav-signin p{
+    color: white;
+    text-decoration: none;
+}
+  
+

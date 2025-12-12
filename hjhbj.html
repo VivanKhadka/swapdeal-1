@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <script>
+      function validateForm(event) {
+        event.preventDefault(); // Prevent form submission
+
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+
+        let emailPattern = /^[a-zA-Z0-9._%+-]+@gmail\.com$/; // Ensures email contains '@gmail.com'
+        let passwordPattern = /^(?=.*\d)[A-Za-z\d]{8,}$/; // At least 8 characters with one number
+
+        if (!emailPattern.test(email)) {
+          alert("Invalid Email! Email must end with '@gmail.com'");
+          return false;
+        }
+
+        if (!passwordPattern.test(password)) {
+          alert(
+            "Invalid Password! Password must be at least 8 characters long and contain at least one number."
+          );
+          return false;
+        }
+
+        alert("Form submitted successfully!");
+        document.getElementById("myForm").submit(); // Submit form if valid
+      }
+    </script>
+  </head>
+  <body>
+    <form id="myForm" onsubmit="validateForm(event)">
+      <label for="email">Email:</label>
+      <input type="text" id="email" name="email" required />
+      <br /><br />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required />
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
